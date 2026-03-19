@@ -3,64 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <title>AcessoSP</title>
 </head>
 <body>
     <header>
-        <div class="navegacao">
-            <a href="index.html"><img class="navegacao-logo" src="assets/logo-header.png" alt="Logo do AcessoSP"></a>
+        <div class="cabecalho_navegacao">
+            <a href="index.html"><img class="cabecalho_navegacao-logo" src="assets/logo-header.png" alt="Logo do AcessoSP"></a>
             <nav>
-                <a class="navegacao_links" href="">AcessoSP</a>
-                <a class="navegacao_links" href="">Locais Avaliados</a>
-                <a class="navegacao_links" href="">Profissionais</a>
-                <a class="navegacao_links" href="">Contato</a>
+                <a class="cabecalho_navegacao_links" href="index.html">AcessoSP</a>
+                <a class="cabecalho_navegacao_links" href="locais-avaliados.html">Locais Avaliados</a>
+                <a class="cabecalho_navegacao_links" href="profissionais.html">Profissionais</a>
+                <a class="cabecalho_navegacao_links" href="contato_html">Contato</a>
             </nav>
-            <a class="links_entrar" href="login.html">Entrar</a>
+            <a class="cabecalho_link_entrar" href="login.html">Entrar</a>
         </div>
-    
-        <div class="fundo">
-            <div class="info-fundo">
+    </header>
+    <main>
+        <div class="hero_imagem_fundo">
+            <div class="informacao_imagem_fundo">
                 <h1 class="titulo_principal">Acesso<strong class="sp">SP</strong></h1>
                 <p>Conheça os locais mais acessiveis de São Paulo e ajude a transformar nossa cidade.</p>
                 <a href="">Conhecer mais</a>
             </div>
         </div>
-    </header>
-    <main>
-        <div class="main_acessibilidade">
-            
-            <section class="texto-acessibilidade">
-                <h2>Pequenos gestos, grandes mudanças</h2>
+        <section class="acessibilidade">
+            <div class="texto_acessibilidade">
+                <h2 class="texto_acessibilidade_subtitulo">Pequenos gestos, grandes mudanças</h2>
                 <p>Aprenda como tornar o dia a dia em São Paulo mais inclusivo para todos.</p>
-            </section>
+            </div>
+            <ul>
+                <li class="tipo_de_acessibilidade">
+                    <p>Tipo de Acessibilidade 1</p>
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </li>
+                <li class="tipo_de_acessibilidade">
+                    <p>Tipo de Acessibilidade 2</p>
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </li>
+                <li class="tipo_de_acessibilidade">
+                    <p>Tipo de Acessibilidade 3</p>
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </li>
+                <li class="tipo_de_acessibilidade">            
+                    <p>Tipo de Acessibilidade 4</p>
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </li>
+                <li class="tipo_de_acessibilidade">
+                    <p>Tipo de Acessibilidade 5</p>
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </li>
+            </ul>
+        </section>
+        <h2 class="avaliacoes_subtitulo">Últimas avaliações</h2>
+        <section class="avaliacoes">
+            <div class="row">
+                <div class="avaliacoes_avaliacao">
+                    <span class="material-symbols-outlined">thumb_up</span>
+                    <h3 class="avaliacoes_avaliacao_subtitulo">Título da avaliação</h3>
+                    <p class="avaliacoes_paragrafo">Texto da avaliação</p>
+                    <div class="person-info">
+                        <img class="avaliacoes_imagem" src="assets/person.png" alt="">
+                        <div>
+                            <p>Nome do Local</p>
+                            <p>Data</p>
+                        </div>
+                    </div>
+                </div>
 
-            <section class="acessibilidade">
-                <p>Tipo de Acessibilidade 1</p>
-                <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </section>
+                
+                <div class="avaliacoes_avaliacao">
+                    <span class="material-symbols-outlined">thumb_up</span>
+                    <h3 class="avaliacoes_avaliacao_subtitulo">Título da avaliação</h3>
+                    <p class="avaliacoes_paragrafo">Texto da avaliação</p>
+                    <div class="person-info">
+                        <img class="avaliacoes_imagem" src="assets/person.png" alt="">
+                        <div>
+                            <p>Nome do Local</p>
+                            <p>Data</p>
+                        </div>
+                    </div>
+                </div>
 
-            <section class="acessibilidade">
-                <p>Tipo de Acessibilidade 2</p>
-                <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </section>
-
-            <section class="acessibilidade">
-                <p>Tipo de Acessibilidade 3</p>
-                <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </section>
-
-            <section class="acessibilidade">
-                <p>Tipo de Acessibilidade 4</p>
-                <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </section>
-
-            <section class="acessibilidade">
-                <p>Tipo de Acessibilidade 5</p>
-                <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </section>
-        </div>
+                <div class="avaliacoes_avaliacao">
+                    <span class="material-symbols-outlined">thumb_up</span>
+                    <h3 class="avaliacoes_avaliacao_subtitulo">Título da avaliação</h3>
+                    <p class="avaliacoes_paragrafo">Texto da avaliação</p>
+                    <div class="person-info">
+                        <img class="avaliacoes_imagem" src="assets/person.png" alt="">
+                        <div>
+                            <p>Nome do Local</p>
+                            <p>Data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <div class="line"></div>
 </body>
 </html>
