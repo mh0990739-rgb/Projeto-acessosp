@@ -210,6 +210,28 @@ div.line {
     margin: 8% 5% 8% 5%;
 }
 
+/* ----------------------- FOOTER --------------------------- */
+
+div.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 20px 0 20px;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+li > a:hover {
+    text-decoration: underline;
+}
+
 @media (min-width: 650px) {
     li.tipo_de_acessibilidade {
         width: 550px;
