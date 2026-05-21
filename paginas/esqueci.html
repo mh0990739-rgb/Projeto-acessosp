@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha - AcessoSP</title>
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/esqueci.css">
+</head>
+<body class="page">
+    
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">
+            <img class="cabecalho_navegacao-logo" src="../assets/logo-header.png" alt="Logo do AcessoSP">
+        </a>
+
+        <button class="navbar__toggle" aria-label="Abrir menu" onclick="toggleMenu()">
+            <span class="navbar__toggle-bar"></span>
+            <span class="navbar__toggle-bar"></span>
+            <span class="navbar__toggle-bar"></span>
+        </button>
+
+        <nav class="navbar__menu" id="navbarMenu">
+            <ul class="navbar__list">
+                <li class="navbar__nav-item"><a href="index.html" class="navbar__link navbar__link--active">AcessoSP</a></li>
+                <li class="navbar__nav-item"><a href="locais-avaliados.html" class="navbar__link">Locais avaliados</a></li>
+                <li class="navbar__nav-item"><a href="encontre-profissionais.html" class="navbar__link">Profissionais</a></li>
+            </ul>
+            <a href="login.html" class="navbar__login-btn">
+                <i class="fa-regular fa-user"></i> Entrar
+            </a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="password-recovery">
+            <div class="password-recovery__container">
+                
+                <h1 class="password-recovery__title">Insira o seu e-mail</h1>
+                <p class="password-recovery__description">Você receberá uma mensagem com o link para criar sua nova senha</p>
+
+                <form class="password-recovery__form" action="#" method="POST">
+                    <input 
+                        type="email" 
+                        class="password-recovery__input" 
+                        placeholder="Digite seu e-mail" 
+                        required
+                    >
+                    <button type="submit" class="password-recovery__submit-btn">Envie</button>
+                    <a href="#" class="password-recovery__cancel-link">Cancelar</a>
+                </form>
+
+                <hr class="password-recovery__divider">
+
+                <p class="password-recovery__footer-text">
+                    Ainda não tem conta? <a href="cadastro.html" class="password-recovery__signup-link">Faça seu cadastro!</a>
+                </p>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
