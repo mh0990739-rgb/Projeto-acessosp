@@ -1,0 +1,230 @@
+:root {
+    --cor-principal: #077373;
+    --cor-branca: #FFFFFF;
+    --cor-azul-botao: #1565C0;
+    --cor-texto-link: #1565C0;
+    --cor-borda: #D1D5DB;
+    --cor-texto-cinza: #6B7280;
+    --fonte: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura dos elementos */
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--cor-branca);
+}
+
+/* ---------- CABEÇALHO ---------- */
+
+.cabecalho_navegacao {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho_navegacao-logo {
+    width: auto;
+    height: 50px;
+}
+
+.cabecalho_navegacao_links {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cabecalho_navegacao_links:hover {
+    opacity: 0.8;
+}
+
+.cabecalho_link_entrar {
+    text-decoration: none;
+    color: var(--cor-branca);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.cabecalho_link_entrar:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- CONTEÚDO PRINCIPAL (LOGIN) ---------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 380px; /* Define a largura limite para ficar igual à imagem */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- BOTÕES SOCIAIS ---------- */
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-branca);
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-family: var(--fonte);
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    transition: 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #f9f9f9;
+}
+
+.btn-social img {
+    width: 18px;
+    position: absolute;
+    left: 15px; /* Mantém o ícone fixo na esquerda */
+}
+
+.paragrafo-ou {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--cor-texto-cinza);
+    font-size: 14px;
+}
+
+/* ---------- FORMULÁRIO ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-padrao {
+    width: 100%;
+    height: 42px;
+    padding-left: 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    font-family: var(--fonte);
+    font-size: 14px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.input-padrao:focus {
+    border-color: var(--cor-azul-botao);
+}
+
+/* Wrapper para colocar o ícone do olho na senha */
+.input-senha-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-senha-wrapper .input-padrao {
+    padding-right: 40px; /* Espaço para o ícone não sobrepor o texto */
+    margin-bottom: 20px;
+}
+
+.icon-eye {
+    position: absolute;
+    right: 15px;
+    top: 21px;
+    transform: translateY(-50%);
+    color: #9CA3AF;
+    cursor: pointer;
+}
+
+/* ---------- BOTÃO DE ENTRAR ---------- */
+
+.btn-entrar {
+    width: 100%;
+    height: 42px;
+    background-color: var(--cor-azul-botao);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fonte);
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.btn-entrar:hover {
+    background-color: #11529e;
+}
+
+/* ---------- LINKS E RODAPÉ DO FORM ---------- */
+
+.esqueci {
+    text-align: center;
+    color: var(--cor-texto-link);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.esqueci:hover, .cadastro-footer a:hover {
+    text-decoration: underline;
+}
+
+.cadastro-footer {
+    text-align: center;
+    width: 100%;
+}
+
+.cadastro-footer hr {
+    border: none;
+    border-top: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.cadastro-footer p {
+    font-size: 13px;
+    color: var(--cor-texto-cinza);
+}
+
+.cadastro-footer a {
+    color: var(--cor-texto-link);
+    text-decoration: none;
+}

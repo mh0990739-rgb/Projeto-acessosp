@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre Profissionais - AcessoSP</title>
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/encontre-profissionais.css">
+</head>
+<body class="page">
+
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">
+            <img class="cabecalho_navegacao-logo" src="../assets/logo-header.png" alt="Logo do AcessoSP">
+        </a>
+
+        <button class="navbar__toggle" aria-label="Abrir menu" onclick="toggleMenu()">
+            <span class="navbar__toggle-bar"></span>
+            <span class="navbar__toggle-bar"></span>
+            <span class="navbar__toggle-bar"></span>
+        </button>
+
+        <nav class="navbar__menu" id="navbarMenu">
+            <ul class="navbar__list">
+                <li class="navbar__nav-item"><a href="index.html" class="navbar__link navbar__link--active">AcessoSP</a></li>
+                <li class="navbar__nav-item"><a href="locais-avaliados.html" class="navbar__link">Locais avaliados</a></li>
+                <li class="navbar__nav-item"><a href="profissionais.html" class="navbar__link">Profissionais</a></li>
+            </ul>
+            <a href="login.html" class="navbar__login-btn">
+                <i class="fa-regular fa-user"></i> Entrar
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="hero-professionals">
+            <div class="hero-professionals__overlay"></div>
+            
+            <div class="hero-professionals__content">
+                <h1 class="hero-professionals__title">Encontre profissionais</h1>
+                <p class="hero-professionals__subtitle">
+                    Especialistas e profissionais que atuam no apoio, cuidado,<br>
+                    reabilitação e inclusão de pessoas com deficiência.
+                </p>
+
+                <form class="hero-professionals__search-box">
+                    <div class="hero-professionals__input-group">
+                        <select class="hero-professionals__select" required>
+                            <option value="" disabled selected>Especialidade</option>
+                            <option value="fisioterapia">Fisioterapia</option>
+                            <option value="fonoaudiologia">Fonoaudiologia</option>
+                            <option value="psicologia">Psicologia</option>
+                            <option value="terapia-ocupacional">Terapia Ocupacional</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="hero-professionals__search-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        Pesquisar
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="help-section">
+            <div class="help-section__container">
+                <h2 class="help-section__title">Quer ajudar? Comece agora!</h2>
+                
+                <div class="help-section__grid">
+                    <article class="help-card">
+                        <div class="help-card__image-placeholder"></div>
+                        <div class="help-card__content">
+                            <p class="help-card__label">Seja voluntário em ONGs de São Paulo</p>
+                        </div>
+                    </article>
+
+                    <article class="help-card">
+                        <div class="help-card__image-placeholder"></div>
+                        <div class="help-card__content">
+                            <p class="help-card__label">Suporte com busca de emprego</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<footer>
+        <hr class="linha-footer">
+        <div class="container footer-container">
+            <div class="footer-coluna">
+                <h3>AcessoSP</h3>
+                <ul>
+                    <li><a href="locais-avaliados.html">Locais avaliados</a></li>
+                    <li><a href="profissionais.html">Profissionais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-coluna">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="">Como nos ajudar?</a></li>
+                    <li><a href="">Trabalhe Conosco</a></li>
+                    <li><a href="">Leis</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-coluna info-empresa">
+                <p>AcessoSP, um lugar para todos<br>serem inclusos!</p>
+                <p>Av Liberdade, 871 - 04355-080</p>
+                
+                <div class="redes-sociais">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navbarMenu');
+            menu.classList.toggle('navbar__menu--open');
+        }
+    </script>
+
+</body>
+</html>
